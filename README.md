@@ -11,5 +11,7 @@ Esto lo he probado en Debian 13 pero deberia funcionar en cualquier Linux, inclu
 * ``md5sum``
 * ``cp``
 
+Si por alguna razon algunas no estuvieran ya instaladas en Debian ejecute ``sudo apt install -y python3 grep file``.
+
 # NOTA:
 Ni idea si algo similar ya existe.
