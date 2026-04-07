@@ -1,9 +1,11 @@
 # sncopy
 Script para comparar dos archivos y realizar una copia en el destino en caso de que sean distintos. Básicamente compara sumas de comprobación md5.
 
-Esto lo he probado en Debian 13 pero deberia funcionar en cualquier Linux, incluso deberia funcionar en Termux y Windows si instala las dependencias necesarias.
+[Para una explicación algo larga y fácil de entender hasta para un niño de 5 años (creo) de lo que hace este programa hacer clic aca](https://github.com/NKLNN/sncopy?tab=readme-ov-file#explicaci%C3%B3n-de-lo-que-hace-este-programa-para-un-ni%C3%B1o-de-5-a%C3%B1os)
 
-# Dependencias usadas son:
+Esto lo he probado en Debian 13 pero deberia funcionar en cualquier distribución de Linux, incluso deberia funcionar en Termux y Windows si instala las dependencias necesarias.
+
+# LAS DEPENDENCIAS USADAS SON:
 * ``python3``
 * ``file``
 * ``grep``
