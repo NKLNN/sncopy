@@ -13,11 +13,11 @@ def sncopy(ORIGEN, DESTINO):
     """Esta función copia y sobreescribe un archivo SOLO en caso de que sean distintos, esto se comprueba usando comparando sumas de comprobación md5."""
 
     if ossystem(f'file {ORIGEN} | grep "^.*: directory$\\|^.*: cannot open \\`.*\' (No such file or directory)" > /dev/null') == 0:
-        print('El origen no existe o es un directorio.')
+        print('El origen no existe o es un directorio')
         return
 
     elif ossystem(f'file {DESTINO} | grep "^.*: directory$" > /dev/null') == 0:
-        print('No se puede operar sobre directorios.')
+        print('No se puede operar sobre directorios')
         return
 
     # ORIGEN
@@ -34,7 +34,7 @@ def sncopy(ORIGEN, DESTINO):
 
     # LOGICA
     if ORESULT != DRESULT or (ORESULT == "d41d8cd98f00b204e9800998ecf8427e" and DRESULT == "d41d8cd98f00b204e9800998ecf8427e"):
-        print(f'Realizando la copia.')
+        print(f'Realizando la copia')
         ossystem(f'cp {ORIGEN} {DESTINO}')
 
 try:
