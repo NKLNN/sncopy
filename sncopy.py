@@ -12,11 +12,11 @@ from subprocess import Popen, PIPE
 def sncopy(ORIGEN, DESTINO):
     """Esta función copia y sobreescribe un archivo SOLO en caso de que sean distintos, esto se comprueba usando comparando sumas de comprobación md5."""
 
-    if ossystem(f'file {ORIGEN} | grep "directory" > /dev/null') == 0:
+    if ossystem(f'file {ORIGEN} | grep "^.*: directory$\\|^.*: cannot open \\`.*\' (No such file or directory)" > /dev/null') == 0:
         print('El origen no existe o es un directorio.')
         return
 
-    elif ossystem(f'file {DESTINO} | grep ": directory" > /dev/null') == 0:
+    elif ossystem(f'file {DESTINO} | grep "^.*: directory$" > /dev/null') == 0:
         print('No se puede operar sobre directorios.')
         return
 
