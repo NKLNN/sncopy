@@ -19,4 +19,4 @@ sncopy ORIGEN DESTINO [ALGO=md5sum]
 Si por alguna razon algunas dependencias no estuvieran ya instaladas en Debian ejecute ``sudo apt update && sudo apt install -y python3 grep file``.
 
 # NOTA:
-Ni idea si algo similar ya existe.
+Ni idea si algo similar ya existe. Si te gusta No me molesta recivir una estrella.
