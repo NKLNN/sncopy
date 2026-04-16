@@ -6,6 +6,8 @@ Esto lo he probado en Debian 13 pero deberia funcionar en cualquier distribució
 # MODO DE USO
 sncopy ORIGEN DESTINO [ALGO=md5sum]
 
+Las copias de un archivo vacio a un archivo vacio o de un archivo vacio a una ubicación donde no hay nada siempre se realizaran, las copias entre carpetas no funcionaran.
+
 # LAS DEPENDENCIAS USADAS SON:
 * ``python3``
 * ``file``
@@ -19,4 +21,4 @@ sncopy ORIGEN DESTINO [ALGO=md5sum]
 Si por alguna razon algunas dependencias no estuvieran ya instaladas en Debian ejecute ``sudo apt update && sudo apt install -y python3 grep file``.
 
 # NOTA:
-Ni idea si algo similar ya existe. Si te gusta No me molesta recivir una estrella.
+Si te gusta No me molesta recivir una estrella.
