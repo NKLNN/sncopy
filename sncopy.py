@@ -44,6 +44,4 @@ if __name__ == "__main__":
     try:
         sncopy(sysargv[1], sysargv[2], sysargv[3] if "sha256sum" in sysargv or "sha512sum" in sysargv else "md5sum")
     except IndexError:
-        print('''# USO:
-1. ORIGEN
-2. DESTINO''')
+        print('# MODO DE USO:\nsncopy ORIGEN DESTINO [ALGO=md5sum]\nLas copias de un archivo vacio a un archivo vacio o de un archivo vacio a una ubicación donde no hay nada siempre se realizaran, las copias entre carpetas no funcionaran.')
