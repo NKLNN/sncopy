@@ -5,6 +5,7 @@
 Descripción: Solo hay una función, vea su documentación.
 """
 
+from shlex import quote
 from os import system as ossystem
 from sys import argv as sysargv
 from subprocess import Popen, PIPE
@@ -14,7 +15,8 @@ DA = dict(md5sum="d41d8cd98f00b204e9800998ecf8427e", sha256sum="e3b0c44298fc1c14
 
 def sncopy(ORIGEN, DESTINO, ALGO="md5sum", /):
     """Esta función copia y sobreescribe un archivo SOLO en caso de que sean distintos, esto se comprueba usando comparando sumas de comprobación md5."""
-
+    ORIGEN = quote(ORIGEN)
+    DESTINO = quote(DESTINO)
     if ossystem(f'file {ORIGEN} | grep "^.*: directory$\\|^.*: cannot open \\`.*\' (No such file or directory)" > /dev/null') == 0:
         print('El origen no existe o es un directorio')
         return
