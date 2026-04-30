@@ -21,4 +21,4 @@ Las copias de un archivo vacio a un archivo vacio o de un archivo vacio a una ub
 Si por alguna razon algunas dependencias no estuvieran ya instaladas en Debian ejecute ``sudo apt update && sudo apt install -y python3 grep file``.
 
 # NOTA:
-Si te gusta No me molesta recivir una estrella.
+Si te gusta No me molesta recivir una estrella aunque es un programa feo teniendo en cuenta mas que nada que creo que podria reducir dependencias.
