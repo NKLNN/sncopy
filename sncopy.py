@@ -26,13 +26,13 @@ def sncopy(ORIGEN, DESTINO, ALGO="md5sum", /):
         return
 
     # ORIGEN
-    O0 = Popen(['cat', ORIGEN], stdout=PIPE)
+    O0 = Popen(['cat', ORIGEN], stdout=PIPE, stderr=PIPE)
     O1 = Popen([ALGO], stdin=O0.stdout, stdout=PIPE)
     O0.stdout.close()
     ORESULT = O1.communicate()[0].decode('utf-8')[:-4]
 
     # DESTINO
-    D0 = Popen(['cat', DESTINO], stdout=PIPE)
+    D0 = Popen(['cat', DESTINO], stdout=PIPE, stderr=PIPE)
     D1 = Popen([ALGO], stdin=D0.stdout, stdout=PIPE)
     D0.stdout.close()
     DRESULT = D1.communicate()[0].decode('utf-8')[:-4]
