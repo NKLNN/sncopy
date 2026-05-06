@@ -11,14 +11,13 @@ Las copias de un archivo vacio a un archivo vacio o de un archivo vacio a una ub
 # LAS DEPENDENCIAS USADAS SON:
 * ``python3``
 * ``file``
-* ``grep``
 * ``cat``
+* ``cp``
 * ``md5sum``
 * ``sha256sum``
 * ``sha512sum``
-* ``cp``
 
-Si por alguna razon algunas dependencias no estuvieran ya instaladas en Debian ejecute ``sudo apt update && sudo apt install -y python3 grep file``.
+Si por alguna razon algunas dependencias no estuvieran ya instaladas en Debian ejecute ``sudo apt update && sudo apt install -y python3 file``.
 
 # NOTA:
-Si te gusta No me molesta recivir una estrella aunque es un programa feo teniendo en cuenta mas que nada que creo que podria reducir dependencias.
+Si te gusta No me molesta recivir una estrella aunque es un programa feo teniendo en cuenta mas que nada que creo que podria reducir dependencias al utilizar solo python.
